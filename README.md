@@ -1,85 +1,41 @@
-# 📘 Data Science Tasks Summary
+# 📊 Project Report: Multi-Task Data Analysis
 
 ## Task 1: Exploring and Visualizing a Simple Dataset
 
-### 📌 Objective
-Explore and visualize a dataset to understand feature distributions and relationships.
+**Objective:** Explore and visualize the Iris dataset.
 
-### 🧠 Approach
-- Loaded the Iris dataset using seaborn.
-- Displayed basic data insights like head, shape, and columns.
-- Visualized relationships using scatter plots, histograms, and boxplots.
+**Approach:** Used seaborn for visualizations including scatter plots, histograms, and boxplots.
 
-### 📊 Results and Insights
-- Found clear separation between species based on petal length and width.
-- Detected outliers using boxplots.
-- Visual insights support the separability of classes.
+**Results & Insights:** Identified correlations and distributions of flower features to support classification understanding.
 
----
+## Task 2: Credit Risk Prediction
 
-## Task 2: Data Cleaning and Preprocessing
+**Objective:** Predict credit risk using customer loan data.
 
-### 📌 Objective
-Perform data cleaning, handle missing values, and prepare data for modeling.
+**Approach:** Cleaned missing data, visualized key patterns, encoded features, and used Logistic Regression.
 
-### 🧠 Approach
-- Identified missing values using `isnull().sum()`.
-- Imputed missing values using mean, median, or mode based on column type.
-- Handled duplicates and ensured data consistency.
+**Results & Insights:** Achieved a good accuracy level and highlighted the influence of education and income on loan amounts.
 
-### 📊 Results and Insights
-- Cleaned data leads to improved model stability.
-- Proper imputation preserves overall data distribution.
+## Task 3: Customer Churn Prediction (Bank Customers)
 
----
+**Objective:** Predict customer churn in a banking context.
 
-## Task 3: Feature Engineering
+**Approach:** Preprocessed data, used encoding, and trained a Random Forest classifier.
 
-### 📌 Objective
-Create new features and transform existing ones to improve model performance.
+**Results & Insights:** Achieved high classification accuracy. Feature importance showed balance and age were major churn indicators.
 
-### 🧠 Approach
-- Generated interaction features and polynomial terms.
-- Normalized numerical features using standardization.
-- Encoded categorical variables using one-hot encoding.
+## Task 4: Predicting Insurance Claim Amounts
 
-### 📊 Results and Insights
-- Feature scaling improved convergence of models.
-- New interaction terms provided better representation of relationships.
+**Objective:** Predict insurance charges using demographic data.
 
----
+**Approach:** Encoded categorical variables and trained a Linear Regression model. Visualized relationships between features and charges.
 
-## Task 4: Model Building and Evaluation
-
-### 📌 Objective
-Build classification models and evaluate performance using various metrics.
-
-### 🧠 Approach
-- Trained classifiers like Logistic Regression and Decision Tree.
-- Used accuracy, precision, recall, and F1-score for evaluation.
-- Performed train-test split with reproducibility using random seed.
-
-### 📊 Results and Insights
-- Logistic Regression performed well with balanced features.
-- Decision Trees gave interpretable rules and revealed important features.
-
----
+**Results & Insights:** Smoking status had the most significant impact on charges. MAE and RMSE indicated reasonable model performance.
 
 ## Task 5: Personal Loan Acceptance Prediction
 
-### 📌 Objective
-Predict which customers are likely to accept a personal loan offer.
+**Objective:** Predict personal loan acceptance.
 
-### 🧠 Approach
-- Loaded the Bank Marketing Dataset using pandas with semicolon delimiter.
-- Performed EDA on `age`, `job`, and `marital` status.
-- Encoded data and trained Logistic Regression and Decision Tree.
-- Evaluated models using confusion matrix and classification report.
+**Approach:** Performed data exploration, applied one-hot encoding, trained a Logistic Regression model, and interpreted coefficients.
 
-### 📊 Results and Insights
-- Younger individuals and those with previous successful contacts were more likely to accept loans.
-- Decision Tree revealed key features like `poutcome`, `month`, and `job`.
-- Logistic regression confirmed similar top features.
-
----
-
+**Results & Insights:** Certain job types and education levels positively correlated with higher acceptance probability.
